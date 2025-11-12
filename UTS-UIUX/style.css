@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldset-container{
+    padding: 30px;
+    border: 2px solid;
+}
+
+legend{
+    padding: 10px;
+}
+
+.booking-form {
+    padding: 30px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 200px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+.date-input-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#tgl_periksa {
+    width: auto;
+    flex-grow: 1;
+}
+
+.calendar-icon {
+    font-size: 1.2em;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    width: auto;
+    margin-right: 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.button-group button {
+    padding: 8px 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-group button:hover{
+    transition: .3s ease-in-out;
+    transition-delay: .2s;
+    background-color: aqua;
+}
