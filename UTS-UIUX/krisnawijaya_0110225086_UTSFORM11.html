@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Periksa Kesehatan Gigi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset class="fieldset-container">
+    <legend><b>Booking Periksa Kesehatan Gigi</b></legend>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="nama_pasien">Nama Pasien</label>
+                <input type="text" id="nama_pasien" name="nama_pasien">
+            </div>
+
+            <div class="form-group">
+                <label for="pilih_dokter">Pilih Dokter</label>
+                <select id="pilih_dokter" name="pilih_dokter">
+                    <option value="drg_amelia">Drg. Amelia</option>
+                    <option value="drg_budi">Drg. Budi</option>
+                    <option value="drg_citra">Drg. Citra</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pilih_layanan">Pilih Layanan</label>
+                <select id="pilih_layanan" name="pilih_layanan">
+                    <option value="perawatan_anak">Perawatan Gigi Anak</option>
+                    <option value="pembersihan">Pembersihan Karang Gigi</option>
+                    <option value="penambalan">Penambalan Gigi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="keluhan">Keluhan</label>
+                <input type="text" id="keluhan" name="keluhan">
+            </div>
+
+            <div class="form-group">
+                <label>Pembayaran</label>
+                <div class="radio-group">
+                    <input type="radio" id="cash" name="pembayaran" value="cash">
+                    <label for="cash">Cash</label>
+                    <input type="radio" id="transfer" name="pembayaran" value="transfer">
+                    <label for="transfer">Transfer</label>
+                    <input type="radio" id="ewallet" name="pembayaran" value="ewallet">
+                    <label for="ewallet">eWallet</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tgl_periksa">Tanggal Periksa</label>
+                <div class="date-input-container">
+                    <input type="date" id="tgl_periksa" name="tgl_periksa">
+                    <span class="calendar-icon">📅</span> 
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="umur">Umur</label>
+                <input type="umur" id="umur" name="umur">
+            </div>
+
+
+            <div class="form-group">
+                <label for="telpon_hp">Telpon/HP</label>
+                <input type="tel" id="telpon_hp" name="telpon_hp">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
